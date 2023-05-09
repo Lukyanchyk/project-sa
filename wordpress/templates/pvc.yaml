@@ -6,6 +6,7 @@ metadata:
   labels:
     {{- include "wordpress.labels" . | nindent 4 }}
 spec:
+  storageClassName: nfs-wordpress
   accessModes:
     - ReadWriteMany
   resources:
