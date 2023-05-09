@@ -6,12 +6,12 @@ metadata:
   labels:
     {{- include "wordpress.labels" . | nindent 4 }}
 spec:
-  storageClassName: nfs-wordpress
   accessModes:
     - ReadWriteMany
   resources:
     requests:
       storage: {{ .Values.persistentVolumeClaim.storageSize }}
+  storageClassName: nfs-wordpress
   selector:
     matchLabels:
       name: wordpress-nfs-vol
