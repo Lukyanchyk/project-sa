@@ -3,7 +3,7 @@ replicaCount: 2
 image:
   repository: lukyanchyk/test-deploy
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "9"
+  tag: "10"
 
 service:
   type: ClusterIP
