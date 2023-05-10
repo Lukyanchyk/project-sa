@@ -10,7 +10,7 @@ service:
   port: 80
 
 ingress:
-  hostname: wordpress-pr.k8s-12.sa
+  hostname: wordpress.k8s-12.sa
 
 persistentVolumeClaim:
   storageSize: 8Gi
