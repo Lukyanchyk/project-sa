@@ -27,6 +27,8 @@ spec:
         ports:
         - containerPort: 80
           name: http
+        resources:
+        {{- toYaml .Values.resources | nindent 12 }}
         volumeMounts:
         - name: wordpress-persistent-storage
           mountPath: /var/www/html/wp-content/
