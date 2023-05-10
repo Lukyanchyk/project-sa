@@ -15,6 +15,9 @@ ingress:
 persistentVolumeClaim:
   storageSize: 8Gi
 
+ip_server: 192.168.37.105
+nfs_mount: /mnt/IT-Academy/nfs-data/sa2-23-23/Mikalai.Lukyanchyk/wordpress
+
 env:
   - name: WORDPRESS_DB_HOST
     value: 192.168.201.12

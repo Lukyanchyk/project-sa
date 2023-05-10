@@ -32,5 +32,6 @@ spec:
           mountPath: /var/www/html/wp-content/
       volumes:
       - name: wordpress-persistent-storage
-        persistentVolumeClaim:
-          claimName: wordpress-pv-claim
+        nfs:
+          server: {{ .Values.ip_server }}
+          path: {{ .Values.nfs_mount }}
