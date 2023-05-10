@@ -29,11 +29,3 @@ spec:
           name: http
         resources:
         {{- toYaml .Values.resources | nindent 12 }}
-        volumeMounts:
-        - name: wordpress-persistent-storage
-          mountPath: /var/www/html/wp-content/
-      volumes:
-      - name: wordpress-persistent-storage
-        nfs:
-          server: {{ .Values.ip_server }}
-          path: {{ .Values.nfs_mount }}
