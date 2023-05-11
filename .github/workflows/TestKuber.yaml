@@ -8,7 +8,7 @@ on:
 env:
     RESULT_FILE: result.log # used as artifact
     ARTIFACT: result-artifact # name of using acrtifact
-    TESTING_PATH: ./wordpress/templates/ # path to testing manifests
+    TESTING_PATH: ./helm-source/template # path to testing manifests
 
 jobs:
   kubetools:

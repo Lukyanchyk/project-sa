@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wp-project
+  labels:
+    app: wp-project
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: wp-project
+    tier: frontend
+  type: ClusterIP

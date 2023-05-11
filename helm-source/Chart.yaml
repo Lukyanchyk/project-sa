@@ -1,0 +1,11 @@
+apiVersion: v2
+name: wp-project
+description: Wordpress IT-Academy Project
+type: application
+version: 0.6.0
+appVersion: v0.6.0
+
+
+maintainers:
+  - name: Mikalai.Lukyanchyk
+    email: Mikalai.Lukyanchyk@gmail.com
