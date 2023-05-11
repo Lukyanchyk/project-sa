@@ -15,7 +15,7 @@ RUN apt-get update && \
     && docker-php-ext-install -j$(nproc) mysqli pdo_mysql zip
 
 # Загрузить выбранную версию WordPress из официального источника
-ARG WORDPRESS_VERSION
+ARG WORDPRESS_VERSION=5.7.2
 RUN curl -O https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz && \
     tar -xzvf wordpress-${WORDPRESS_VERSION}.tar.gz && \
     rm wordpress-${WORDPRESS_VERSION}.tar.gz && \
