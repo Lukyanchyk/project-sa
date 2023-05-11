@@ -48,9 +48,11 @@ spec:
           name: http
         volumeMounts:
         - name: wordpress-persistent-storage
+          storageclass: nfs-wordpress
           mountPath: /var/www/html/wp-content/
       volumes:
       - name: wordpress-persistent-storage
+        storageclass: nfs-wordpress
         persistentVolumeClaim:
           claimName: wordpress-pv-claim
 
