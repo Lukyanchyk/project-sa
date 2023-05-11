@@ -48,7 +48,7 @@ spec:
           name: http
         volumeMounts:
         - name: wordpress-persistent-storage
-          mountPath: /var/www/html/wp-content/
+          mountPath: /var/www/html/
       volumes:
       - name: wordpress-persistent-storage
         ip_server: 192.168.37.105
