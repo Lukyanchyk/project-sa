@@ -51,6 +51,6 @@ spec:
           mountPath: /var/www/html/wp-content/
       volumes:
       - name: wordpress-persistent-storage
-        persistentVolumeClaim:
-          claimName: wordpress-pv-claim
+        ip_server: 192.168.37.105
+        nfs_mount: /mnt/IT-Academy/nfs-data/sa2-23-23/Mikalai.Lukyanchyk/wordpress
 
