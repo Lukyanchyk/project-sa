@@ -8,11 +8,10 @@ metadata:
     {{- include "wordpress.labels" . | nindent 4 }}
 spec:
   capacity:
-    storage: 8Gi
+    storage: 10Gi
   accessModes:
     - ReadWriteMany
-  storageClassName: nfs-wordpress
   persistentVolumeReclaimPolicy: Recycle
   nfs:
-    path: /mnt/IT-Academy/nfs-data/sa2-23-23/Mikalai.Lukyanchyk/wordpress/
+    path: /mnt/IT-Academy/nfs-data/sa2-23-23/Mikalai.Lukyanchyk/wordpress
     server: 192.168.37.105
