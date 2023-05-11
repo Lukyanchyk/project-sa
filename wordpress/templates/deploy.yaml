@@ -52,5 +52,5 @@ spec:
       volumes:
       - name: wordpress-persistent-storage
         ip_server: 192.168.37.105
-        nfs_mount: /mnt/IT-Academy/nfs-data/sa2-23-23/Mikalai.Lukyanchyk/wordpress
+        nfs_mount: /mnt/IT-Academy/nfs-data/sa2-23-23/Mikalai.Lukyanchyk/wordpress/
 
