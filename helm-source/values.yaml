@@ -13,7 +13,7 @@ replicaCount: 1
 image:
   repository: lukyanchyk/project-sa
   pullPolicy: IfNotPresent
-  tag: "50"
+  tag: "111"
 
 # Service port configurations
 service:
